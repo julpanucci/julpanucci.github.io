@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: "Julian Panucci loves ducks.",
-        author:"Duck Lover 69"
+        author:"ducklover007"
     },
     plugins: [
         'gatsby-plugin-sass',
