@@ -12,13 +12,15 @@
     "start": "env-cmd -f .env.development gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.32.3",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-remark": "^2.16.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
