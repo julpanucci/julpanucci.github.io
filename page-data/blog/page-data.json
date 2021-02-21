@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"The Great Gatsby","date":"2021-02-20"},"fields":{"slug":"gatsby"}}},{"node":{"frontmatter":{"title":"React","date":"2020-12-25"},"fields":{"slug":"react"}}}]}},"pageContext":{}},"staticQueryHashes":["3159585216","440568431"]}

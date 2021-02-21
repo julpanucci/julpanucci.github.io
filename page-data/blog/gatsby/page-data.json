@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-blog-js","path":"/blog/gatsby","result":{"data":{"markdownRemark":{"frontmatter":{"title":"The Great Gatsby","date":"2021-02-20"},"html":"<p>I just launched this website!</p>\n<h1>Things to do</h1>\n<ol>\n<li>Gatsby</li>\n<li>GraphQL</li>\n</ol>"}},"pageContext":{"slug":"gatsby"}},"staticQueryHashes":["3159585216","440568431"]}
