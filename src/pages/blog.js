@@ -3,30 +3,15 @@ import React from 'react';
 import Header from "../components/header"
 import Layout from '../components/layout';
 
-const BlogPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark {
-                edges {
-                    node {
-                        frontmatter {
-                            title
-                            date
-                        }
-                        fields {
-                            slug
-                        }
-                    }
-                }
-            }
-        }
-    `)
+const BlogPage = ({data}) => {
+    const {allMarkdownRemark} = data;
+    const {edges} = allMarkdownRemark;
     return (
         <Layout>
             <h1>Blog</h1>
             <ol>
                 {
-                    data.allMarkdownRemark.edges.map( (edge) => {
+                    edges.map( (edge) => {
                         return (
                             <li>
                                 <h2><Link to={`${edge.node.fields.slug}`}>{edge.node.frontmatter.title}</Link></h2>
@@ -41,3 +26,21 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+export const query = graphql`
+        query {
+            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(posts)/"  }}) {
+                edges {
+                    node {
+                        frontmatter {
+                            title
+                            date
+                        }
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+`
