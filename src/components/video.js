@@ -3,11 +3,12 @@ import  '../styles/video.scss'
 import sunset from "../images/sunset.png"
 
 
+
 const Video = ({ videoSrcURL, videoTitle, ...props }) => {
 
     const [state, setState] = useState('image')
 
-   const touch = () => {
+    const touch = () => {
         setState('video')
     }
 
